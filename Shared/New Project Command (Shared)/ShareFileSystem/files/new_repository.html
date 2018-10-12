@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+    	<meta charset="UTF-8">
+		<title> Shared - Repositorios </title>
+		<link rel="stylesheet" type="text/css" href="../styles/estilos.css">
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="menuscript.js"></script>
+    </head>
+
+    <body>
+    	<header>
+    		<p id="titulo"> Crear Repositorio </p>
+	    	<div class="contenedor">
+	    		<nav class="menu-fixed">
+		    		<ul class="nav">
+				    	<li><a href="../index.html"> Inicio </a></li>
+						<li><a href="repositories.html"> Repositorios </a></li>
+						<li><a href="download.html"> Descargar </a></li>
+						<li><a href="config.html"> Configuracion </a></li>
+						<li><a href="help.html"> Ayuda </a></li>
+						<li><a href="new_repository.html"> Crear Repositorio </a></li>
+			    	</ul>
+		    	</nav>
+	    	</div>
+	    </header>
+
+	    <form action="../form_data.php" name="Formulario" id="form-content" method="get">
+
+	    	<label for="admin_name"> Nombre del Administrador: </label>
+	    	<input type="text" placeholder="Nombre del Administrador" name="admin_name" id="text-input1">
+	    	<br>
+
+	    	<label for="admin_account"> Cuenta del Administrador: </label>
+	    	<input type="text" placeholder="Cuenta del Administrador" name="admin_account" id="text-input5">
+	    	<br>
+
+	    	<label for="admin_email"> Email del Administrador:  </label>
+	    	<input type="email" placeholder="Email del Administrador" name="admin_email" id="text-input2">
+	    	<br>
+	    	
+	    	<label for="admin_name"> Nombre del Repositorio: </label>
+	    	<input type="text" placeholder="Nombre del Repositorio" name="admin_name" id="text-input3">
+	    	<br>
+	    	
+	    	<label for="proj_name"> Nombre del Proyecto: </label>
+	    	<input type="text" placeholder="Nombre del Proyecto" name="proj_name" id="text-input4">
+
+	    	<br>
+	    	<label for="licencias"> Seleccione la Licencia que este Usando: </label>
+
+	    	<select name="licencias" id="license">
+	    		<option value="none">-------Seleccione una Licencia de Software-------</option>
+	    		<option value="apache20">Apache 2.0</option>
+	    		<option value="gnu"> GNU </option>
+	    		<option value="gpl"> General Public License (GPL) </option>
+	    		<option value="spslicense"> SPS License </option>
+	    		<option value="other"> Otra </option>
+	    	</select>
+
+	    	<p id="nota"> • NOTA: En sus proyectos open source se recomienda usar una licencia de software que se ajuste a sus necesidades </p>
+	    	<br>
+
+	    	<label for="cargar_archivos"> Selecciona la Carpeta de tu Proyecto </label>
+	    	<input type="file" id="Filebtn" name="cargar_archivos">
+	    	<br>
+	    	<br>
+
+	    	<input type="submit" id="btn" name="btn" value="Enviar">
+	    </form>
+
+		<script>
+			var formulario = document.getElementsByName('Formulario')[0],
+				elementos = formulario.elements,
+				boton = document.getElementById('btn');
+ 
+			function validar_campos () {
+				var adminName, adminAccount, adminEmail, repName, projName;
+				adminName = document.getElementById('text-input1').value;
+				adminAccount = document.getElementById('text-input5').value;
+				adminEmail = document.getElementById('text-input2').value;
+				repName = document.getElementById('text-input3').value;
+				projName = document.getElementById('text-input4').value;	
+
+				if (adminName == "" || adminAccount == "" || adminEmail == "" || repName == "" || projName == "") {
+						alert("Complete los campos que se le solicitan");
+					} else {
+						return true;
+					}
+			}
+
+			function load_files (file, server) {
+				var serverDB = server;
+				var fileUpLoad = file;
+
+				// files .pps is Programming Project Share
+				if(fileUpLoad == ".pps") {
+					SubirArchivo(fileUpLoad, serverDB)
+				}
+			}
+
+		</script>
+
+	    <div class="footer">
+			<p class="rights"> Shared Copyright Sector B Company 2017 </p>
+		</div>
+	</body>
+</html>

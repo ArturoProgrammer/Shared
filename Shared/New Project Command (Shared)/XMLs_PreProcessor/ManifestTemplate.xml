@@ -1,0 +1,11 @@
+<application name="#{app_name}"
+    version="#{app_version}"
+    licenses="#{app_licenses}">
+
+    <software>
+		<sys use:software="#{soft_shared}"> <!--Git, SFS, etc.-->
+		
+		<app code="#{app_code}">
+		<app author="#{app_author}">
+    </software>
+</application>

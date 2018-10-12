@@ -1,0 +1,17 @@
+<shared-system app:author="#{app_author}"
+	app:name="#{app_name}">
+
+	<contributors>
+		<list person="#{person}"
+			name="#{person_name}"
+			priority="#{person_priority}">
+
+		<!--
+		Por cada contribuyente al proyecto, se agrega una nueva etiqueta
+		"list" con los atributos de cada contribuyente.
+
+		Es muy importante respetar el espacio de tabulaciones asignado por
+		el programa.
+		-->
+	</contributors>
+</shared-system>

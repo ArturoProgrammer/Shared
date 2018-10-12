@@ -1,0 +1,56 @@
+Archivos:
+-Manifest.xml
+-SFSProjectCommand.py (Modulo principal)
+-SharedSystem.xml
+-MainScript.sh
+-NOTAS.txt
+-SetUp.py
+-CErrors.py
+-pcommands.py
+-deleteprol.sh
+-main.sh
+-Info.hi*
+
+Los archivos fuera de la carpeta debug, son archivos de prueba. El contenido 
+dentro de los archivos son ejemplos del contenido que ira
+dentro de los archivos creados por el programa.
+
+***SOLO ES COMPATIBLE EN GNU/Linux***
+
+Como Ejecutar:
+	Solucion actual: Ubicarse en el directorio "Escritorio/" y ejecutar el
+	comando: python [nombre del archivo] . [extension del archivo]
+	
+	Ejemplo: python MainScript.py
+	
+======ERRORES======
+*No se ubica en el directorio del proyecto.
+
+======PENDIENTES======
+*Terminar la pagina del sistema.
+*Terminar los comandos del modulo pcommnads.
+*Crear el script XMLProjectFiles.sh
+*Crear el script ServerCopy.sh
+
+======FUNCIONES======
+InitSoftwareAdmin - pcommands
+ServerCopy - pcommands
+del_project - pcommands
+console - CErrors
+
+======LISTA DE ERRORES DE LA CONSOLA DE COMANDOS======
+*100 - Error de sintaxis.
+*101 - Error del objeto.
+*102 - Error del codigo de registro general.
+*103 - Acceso general no existe.
+
+*208 - Se requiere importar.
+*209 - Decodificacion fallida.
+*210 - Error de autenticacion.
+
+*303 - Error de configuracion del sistema.
+*305 - Error al momento de cargar el sistema.
+*313 - Plataforma no soportada por el sistema.
+
+*404 - No existe el comando.
+*505 - No se encuentra el comando.

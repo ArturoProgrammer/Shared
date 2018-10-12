@@ -1,0 +1,34 @@
+﻿-----Primer Inicio----
+
+-
+-----Nombre de usuario-----
+
+El nombre del usuario debe cumplir las siguientes condiciones para ser valido:
+
+
+	a)No se permite el uso de espacios.
+
+	b)No se permite el uso de signos o alguno de los siguientes caracteres:
+
+		*!, #, $, &, %, ?, ¿, ', ", {, }, [, ], /, \, *, +, <, >
+
+	c)Se debe usar minimo una letra mayuscula.
+
+	d)Opcionalmente para y mayor seguridad se debe usar minimo un numero.
+
+
+
+-----Autenticacion del autor de un proyecto-----
+
+
+Para verificar el nombre de un autor se realiza lo siguiente:
+
+
+	a)Se realiza una copia del archivo original Manifest.xml para mantener
+
+	  el registro del nombre del verdadero autor de un proyecto.
+
+	b)Una vez hecha la copia, se almacena en los servidores principales
+
+	  del sistema y se borrara cuando el autor lo desee, pero para esto se
+	  debe ingresar el codigo del proyecto.

@@ -1,0 +1,17 @@
+import System.Core;
+import System.Multimedia;
+
+using AppManifest.xml;
+
+
+public class Map {
+	def __init__ (args[]) {
+		var map_image_direction = "../files/images/cityMap[Hermosillo].jpg" as string;
+
+		Multimedia.Image.load((1080, 1090), map_image_direction, 8);
+		def mainFunction (args[]) {
+			pass;
+		}
+		return mainFunction();
+	}
+}

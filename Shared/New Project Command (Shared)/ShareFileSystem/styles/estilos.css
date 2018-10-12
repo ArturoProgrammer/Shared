@@ -1,0 +1,261 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Inicio del Menu */
+.contenedor {
+	width: 95%;
+	max-width: 1000px;
+	margin: auto;
+}
+
+.contenedor p {
+	margin-bottom: 40px;
+}
+
+header nav {
+	background: #3498db;
+	margin-bottom: 10px;
+	-webkit-transition: all ease .5;
+	-o-transition: all ease .5;
+	transition: all ease .5;
+}
+
+header nav ul {
+	list-style: none;
+	overflow: hidden;
+}
+
+header nav ul li {
+	float: left;
+}
+
+header nav ul li a {
+	display: block;
+	padding: 20px;
+	color: #fff;
+	text-decoration: none;
+	font-family: Noto Sans CJK KR Light;
+}
+
+header nav ul li a:hover {
+	background: #2980b9;
+}
+
+.menu-fixed {
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-shadow: 0px 4px 3px rgba(0,0,0,.5);
+}
+
+.menu-fixedul li a {
+	padding: 15px 20px;
+}
+
+/* Fin del Menu */
+
+
+
+
+
+#titulo {
+	margin-top: 60px;
+	font-family: Khmer OS;
+	font-size: 45px;
+	text-align: center;
+	right: 43px;
+}
+
+.opcion {
+	font-family: Noto Sans CJK KR Light;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+}
+
+div.opcion li a:hover {
+	background: #000;
+	display: block;
+	width: 210px;
+	height: 98px;
+}
+
+.subtitulo {
+	font-size: 25px;
+	text-align: left;
+	margin-left: 120px;
+	font-family: Noto Sans CJK KR Light;
+}
+
+
+
+/* Inicio de Botones */
+.button {
+	font-family: Khmer OS;
+	background: #7f8c8d;
+	color: #fff;
+	display: inline-block;
+	font-size: 1em;
+	margin:20px;
+	padding: 10px 0px;
+	text-align: center;
+	width: 200px;
+	text-decoration: none;
+	box-shadow: 0px 3.5px 0px #373c3c;
+}
+
+/*colores*/
+.button.blue {
+	background: #3498db;
+	box-shadow: 0px 3.5px 0px #266792;
+}
+
+.button.orange {
+	background: #e67e22;
+	box-shadow: 0px 3.5px 0px #b55704;
+}
+
+.button.red {
+	background: #ef213a;
+	box-shadow: 0px 3.5px 0px #8f0126;
+}
+
+.button.green {
+	background: ;
+	box-shadow: 0px 3.5px 0px;
+}
+
+/*Tamaños*/
+.button.medium {
+	width: 350px;
+}
+
+.button.large {
+	width: 450px;
+}
+
+/* Fin de Botones */
+
+
+
+/* Inicio de Pie de Pagina */
+div.footer {
+	margin-top: 20px;
+	position: relative;
+	width: 100%;
+	height: 140px;
+	background: #3498db;
+	font-family: Khmer OS;
+}
+
+p.rights {
+	position: relative;
+	text-align: center;
+	top: 50px;
+	color: #fff;
+}
+
+p.rights a {
+	text-decoration: none;
+	color: #0159c5;
+}
+
+p.rights a:hover {
+	text-decoration: underline;
+}
+
+/* Fin de Pie de Pagina */
+
+
+
+
+.contenido a {
+	font-size: 18px;
+	font-family: Laksaman;
+	margin-left: 100px;
+	text-decoration: none;
+	list-style: none;
+	color: #000;
+}
+
+.contenido a:hover {
+	width: 200px;
+	height: 80px;
+	background: #7f8c8d;
+	color: #fff;
+	text-decoration: underline;
+}
+
+.contenido p {
+	font-family: Laksaman;
+	font-size: 18px;
+	margin-left: 120px;
+}
+
+#slogan {	
+	font-size: 1.60em;
+	text-align: center;
+	font-family: Purisa;
+}
+
+/* Estilos del Formulario */
+#form-content {
+	margin-left: 120px;
+	font-family: Laksaman;
+	font-size: 18px;
+	margin-top: 18px;
+}
+
+#nota {
+	font-size: 13.5px;
+	margin-top: 12px;
+}
+
+#text-input1 {
+	margin-left: 120px;
+	width: 287px;
+}
+
+#text-input2 {
+	margin-left: 143.5px;
+	width: 287px;
+}
+
+#text-input3 {
+	margin-left: 142.5px;
+	width: 287px;
+}
+
+#text-input4 {
+	margin-left: 163.5px;
+	width: 287px;
+}
+
+#text-input5 {
+	margin-left: 128px;
+	width: 287px;
+}
+
+#license {
+	margin-left: 12px;
+}
+
+#btn  {
+	width: 160px;
+	height: 28px;
+	margin-left: 250px;
+}
+
+#Filebtn {
+	width: 160px;
+	height: 28px;
+	margin-left: 20px;
+}
